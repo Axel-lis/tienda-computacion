@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Productos</title>
+    <link href="/../miproyecto-cambios/assets/css/estilos.css" rel="stylesheet" media="screen">
+    <link href="/../miproyecto-cambios/assets/css/navbar.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<!--navbar-->
+<nav class="navbar">
+    <img
+    src="/../miproyecto/assets/img/idea-light-bulb-svgrepo-com.svg"
+    alt="logoempresa"
+    height="87"
+    width="100" />
+    <div class="brand-title">Bienvenidos a la tienda de computacion!</div>
+    <p> alumno: Axel Liscovsky</p>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+        <ul>
+            <li> <a href="/../miproyecto-cambios/backend/views/home.html">Home</a> </li>
+            <li> <a href="https://github.com/Axel-lis/">About</a> </li>
+            <li> <a href="#">Contact</a> </li>
+        </ul>
+    </div>
+</nav>
+<!--formulario alta producto-->
+<form name="form_productos" id="form_productos">
+        <input type="text" id="idgenerado"  name='idgenerado' hidden> 
+        <label for="name">Nombre producto:</label> <br>
+        <input type="text" id="nombre_producto"  name='nombre_producto' placeholder="nombre producto..">
+        <br><br>
+        <label for="img">Imagen<br>
+        <input type="file" id="imagen" name='imagen'></label>
+        <br><br>
+        <label for="desc">Descripción</label> 
+        <input type="text" id="descripcion_producto" name='descripcion_producto'placeholder="Descripción.." >
+        <br><br>
+        <label for="price">Precio</label> 
+        <input type="text" id="precio_producto" name='precio_producto' placeholder="Precio unidad..">
+        <br><br>
+        <label for="categ">Categoría</label>
+        <input type="text" id="categoria_producto" name='categoria_producto' placeholder="Categoría..">
+    <div class="btns">
+        <input type="button" id="btncancelar" class="btncancelar" value="CANCELAR">
+        <input type="button" id="btnguardar" class="btnguardar" value="GUARDAR">   
+    </div>
+</form>
+
+            
+
+
+
+
+<footer>@Alumno: Axel Liscovsky, dni:39931540</footer>
+
+<!--jquery cdn-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <!--validate js cdn-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <!--scripts-->
+    <script src="/../miproyecto-cambios/assets/js/form-validation.js"></script>
+    <script src="/../miproyecto-cambios/assets/js/productos.js"></script>
+    <script src="/./miproyecto-cambios/assets/js/home.js"></script>
+</body>
+</html>
